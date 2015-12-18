@@ -49,6 +49,29 @@ Get The dynamics of patterns by M.I. Rabinovich, A.B. Ezersky, P.D. Weidman and 
 - [ ] December 11/18, 2015: in-class final presentation
 - [ ] December ~~18~~ 22, 2015: upload deliverables by ~~11:30 pm~~ 12:00 pm
 
+## Preliminary Results ##
+* One Step
+  * nu = 1
+![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/1step_100_1.png)
+  * nu = 5
+![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/1step_100_5.png)
+* Two Steps
+  * nu = 1
+![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/2step_100_1.png)
+  * nu = 5
+![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/2step_100_5.png)
+* Three Step
+  * nu = 1
+![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/3step_100_1.png)
+  * nu = 5
+![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/3step_100_5.png)
+* Four Steps (divergence...)
+  * nu = 1
+![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/4step_100_1.png)
+  * nu = 5
+![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/4step_100_5.png)
+
+
 ## References ##
 Moulton, D. E., and J. A. Pelesko. "Reverse Draining of a Magnetic Soap Film." Physical Review E Phys. Rev. E 81.4 (2010) Web.
 
