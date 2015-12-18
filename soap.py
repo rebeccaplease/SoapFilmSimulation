@@ -102,28 +102,58 @@ for t in range(0,time-1):
 	#print("t:",t)
     #for each xi point
 	for i in range(1,size-1):
-		#print(i)
 		if i == 1:
 			dhdt[i,t] = (Q(i+1,t)-0)/d
 		elif i == size-2:
 			dhdt[i,t] = (0-Q(i-1,t))/d
+		#cant find 3rd derivs here
+			
 		else:
-			dhdt[i,t] = (Q(i+1,t)-Q(i-1,t))/d
-		# solve dhdt with Adams Bashforth
+ 			dhdt[i,t] = (Q(i+1,t)-Q(i-1,t))/d
+	 #solve dhdt with Adams Bashforth
 		# use Euler's method for first time step (need at least 2 points for 2 step AB)
-		if t == 1:
+		if t == 0:
 			h[i,t+1] = euler(i,t)
 		else:
-			#if t==5:
-				#print(i, euler(i,t))
-				#print(i, adamB2(i,t))
+#			if t==3:
+#				print(i, adamB2(i,t))
 			h[i,t+1] = adamB2(i,t)
+	#h[i,]
+
+#==============================================================================
+# 	for i in range(1,N):
+# 		#print(i)
+# 		if i == 1:
+# 			dhdt[i,t] = (Q(2*i+1,t)-0)/d
+# 		elif i == N-1:
+# 			dhdt[i,t] = (0-Q(2*i-1,t))/d
+# 		# can't do 3rd derivative 
+# 		else:
+# 			dhdt[i,t] = (Q(2*i+1,t)-Q(2*i-1,t))/d
+# 		# solve dhdt with Adams Bashforth
+# 		# use Euler's method for first time step (need at least 2 points for 2 step AB)
+# 		if t == 0:
+# 			h[2*i,t+1] = euler(i,t)
+# 			
+# 		else:
+# 			h[2*i,t+1] = adamB2(i,t)
+# 			if i > 1:
+# 				h[2*i-1,t+1] = (h[2*i-2,t+1]+h[2*i,t+1])/2
+# 			if t==1:
+# 				#print(i, adamB2(i,t))
+# 				print(h[2*i-2,t+1],h[2*i,t+1])
+# 				print(h[2*i-1,t+1])
+#==============================================================================
+				
 
 
 plot(x[0:size:2],h[0:size:2,0])
-#plot(x,h[:,1])
+plot(x,h[:,1])
 plot(x[0:size:2],h[0:size:2,1])
 plot(x[0:size:2],h[0:size:2,2])
+plot(x[0:size:2],h[0:size:2,3])
+
+
 #plot(x[0:size:2],h[0:size:2,time-1])
 #plot(x,h[:,time-1])
 show()
