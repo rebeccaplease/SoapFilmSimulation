@@ -31,15 +31,23 @@ would have to include some sort of continuity or conditions applied to the rever
 * Contingency plans: focus solely on gravity or magnetic fields or just patterns in soap film and make a nice visualization for the simulation. This would be in case the models are too complex or if results are not as expected.
 
 ## Schedule ##
-* November 6, 2015: 5 minute summary/presentation in class on my project
-* November 13, 2015: create website and with information from this project proposal.
+- [x] November 6, 2015: 5 minute summary/presentation in class on my project
+- [x] November 13, 2015: create website and with information from this project proposal.
 Get The dynamics of patterns by M.I. Rabinovich, A.B. Ezersky, P.D. Weidman and read the relevant chapter on soap film patterns. Also get and read Soap films, studies of their thinning by Karol Mysels (cited by almost all the articles I looked up about soap films.) Narrow project with gravity/magnetic field + patterns.
-* November 20, 2015: Preliminary simulations and compare results to the papers.
-* November 23, 2015: 1 page progress update
-* November 27, 2015: Continue refining, coding, testing
-* December 4, 2015: in-class update
-* December 11/18, 2015: in-class final presentation
-* December 18, 2015: upload deliverables by 11:30 pm
+  - [x] Project was narrowed down to time evolution of the magnetic soap film
+- [ ] November 20, 2015: Preliminary simulations and compare results to the papers.
+  * Taking longer than expected to figure out paper and determine a method for solving the equations.
+- [x] November 23, 2015: 1 page progress update
+- [ ] November 27, 2015: Continue refining, coding, testing
+  * Still in the process of doing so
+
+- [x] December 4, 2015: in-class update
+  * Class canceled but the 1 page progress update was turned in
+  * Decided to use method of finite differences for determining third derivative of h with respect to x
+  * Also using Adams-Bashforth method to solve for h after finding dh/dt at each gridpoint
+  * Currently debugging boundary conditions and grid parameters since spikes appear after more than 2 timesteps. Perhaps the method itself won't lead to convergence.. In which case another method must be used.  
+- [ ] December 11/18, 2015: in-class final presentation
+- [ ] December ~~18~~ 22, 2015: upload deliverables by ~~11:30 pm~~ 12:00 pm
 
 ## References ##
 Moulton, D. E., and J. A. Pelesko. "Reverse Draining of a Magnetic Soap Film." Physical Review E Phys. Rev. E 81.4 (2010) Web.
