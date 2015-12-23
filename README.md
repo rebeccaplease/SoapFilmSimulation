@@ -35,10 +35,10 @@ would have to include some sort of continuity or conditions applied to the rever
 - [x] November 13, 2015: create website and with information from this project proposal.
 Get The dynamics of patterns by M.I. Rabinovich, A.B. Ezersky, P.D. Weidman and read the relevant chapter on soap film patterns. Also get and read Soap films, studies of their thinning by Karol Mysels (cited by almost all the articles I looked up about soap films.) Narrow project with gravity/magnetic field + patterns.
   - [x] Project was narrowed down to time evolution of the magnetic soap film
-- [ ] November 20, 2015: Preliminary simulations and compare results to the papers.
+- [x] November 20, 2015: Preliminary simulations and compare results to the papers.
   * Taking longer than expected to figure out paper and determine a method for solving the equations.
 - [x] November 23, 2015: 1 page progress update
-- [ ] November 27, 2015: Continue refining, coding, testing
+- [x] November 27, 2015: Continue refining, coding, testing
   * Still in the process of doing so
 
 - [x] December 4, 2015: in-class update
@@ -46,29 +46,29 @@ Get The dynamics of patterns by M.I. Rabinovich, A.B. Ezersky, P.D. Weidman and 
   * Decided to use method of finite differences for determining third derivative of h with respect to x
   * Also using Adams-Bashforth method to solve for h after finding dh/dt at each gridpoint
   * Currently debugging boundary conditions and grid parameters since spikes appear after more than 2 timesteps. Perhaps the method itself won't lead to convergence.. In which case another method must be used.  
-- [ ] December 11/18, 2015: in-class final presentation
-- [ ] December ~~18~~ 22, 2015: upload deliverables by ~~11:30 pm~~ 12:00 pm
+- [x] December 11/18, 2015: in-class final presentation
+- [x] December ~~18~~ 22, 2015: upload deliverables by 12:00 pm
 
 ## Preliminary Results ##
 * One Step
-  * nu = 1
+  * lambda = 1
 ![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/1step_100_1.png)
-  * nu = 5
+  * lambda = 5
 ![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/1step_100_5.png)
 * Two Steps
-  * nu = 1
+  * lambda = 1
 ![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/2step_100_1.png)
-  * nu = 5
+  * lambda = 5
 ![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/2step_100_5.png)
-* Three Step
-  * nu = 1
+* Three Steps
+  * lambda = 1
 ![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/3step_100_1.png)
-  * nu = 5
+  * lambda = 5
 ![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/3step_100_5.png)
 * Four Steps (divergence...)
-  * nu = 1
+  * lambda = 1
 ![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/4step_100_1.png)
-  * nu = 5
+  * lambda = 5
 ![alt tag](https://raw.github.com/rebeccaplease/SoapFilmSimulation/master/images/4step_100_5.png)
 
 
